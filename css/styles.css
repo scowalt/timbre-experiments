@@ -1,5 +1,18 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
+	background-color           : black;
+	color                      : white;
+	font-family                : 'Open Sans', sans-serif;
+}
+
+h1 {
+	-webkit-animation-delay    : 0.5s;
+	-webkit-animation-duration : 3s;
+}
+
+/*http://codepen.io/shshaw/full/gEiDt*/
+.Absolute-Center {
+	margin: auto;
+	position: absolute;
+	height: 1px;
+	top: 0; left: 0; bottom: 0; right: 0;
 }

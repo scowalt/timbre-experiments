@@ -15,16 +15,19 @@ function getRandomPentatonicMIDI(){
 	return note;
 }
 
+function handler(){
+	var freq = getRandomPentatonicMIDI().midicps();
+	var note = T("sin", {
+		freq : freq,
+		mul  : 0.20});
+	var envelope = T("perc", {r : SOUND_LENGTH}, note).on("ended",function(){
+		this.pause();
+	}).bang().play();
+}
+
 $(document).ready(function(){
 	$(document).ready(function(){
-		$(document).keypress(function(){
-			var freq = getRandomPentatonicMIDI().midicps();
-			var note = T("sin", {
-				freq : freq,
-				mul  : 0.20});
-			var envelope = T("perc", {r : SOUND_LENGTH}, note).on("ended",function(){
-				this.pause();
-			}).bang().play();
-		});
+		$(document).keypress(handler);
+		$(document).click(handler);
 	});
 });
