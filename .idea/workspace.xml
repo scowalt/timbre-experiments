@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e575fd9d-85da-449a-850c-a1ddb4e1f239" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/js.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/scowa_000.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="timbre-experiments.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.js" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384363351008" ignored="false" />
     <file path="/Dummy.txt" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384367521172" ignored="false" />
-    <file path="/index.html" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384368030391" ignored="false" />
+    <file path="/index.html" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384368900318" ignored="false" />
     <file path="/fragment.java" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384363648225" ignored="false" />
     <file path="/script.js" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384368744181" ignored="false" />
+    <file path="/a.html" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384368883513" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,19 +73,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="21" selection-start="361" selection-end="361" vertical-scroll-proportion="0.37103173">
+            <state line="13" column="17" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="7" selection-start="222" selection-end="222" vertical-scroll-proportion="-7.1923075">
+            <state line="12" column="7" selection-start="255" selection-end="255" vertical-scroll-proportion="0.42677826">
               <folding />
             </state>
           </provider>
@@ -114,8 +109,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -175,7 +170,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.sourceCode" />
+    <property name="options.lastSelected" value="preferences.sourceCode.HTML" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -447,16 +442,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="222" selection-end="222" vertical-scroll-proportion="-7.1923075">
+        <state line="13" column="17" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="361" selection-end="361" vertical-scroll-proportion="0.37103173">
+        <state line="12" column="7" selection-start="255" selection-end="255" vertical-scroll-proportion="0.42677826">
           <folding />
         </state>
       </provider>
