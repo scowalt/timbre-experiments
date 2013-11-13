@@ -15,7 +15,7 @@ function getRandomPentatonicMIDI(){
 	return note;
 }
 
-function handler(){
+function playNote(){
 	var freq = getRandomPentatonicMIDI().midicps();
 	var note = T("sin", {
 		freq : freq,
@@ -27,7 +27,7 @@ function handler(){
 
 $(document).ready(function(){
 	$(document).ready(function(){
-		$(document).keypress(handler);
-		$(document).click(handler);
+		$(document).keypress(playNote);
+		$(document).click(playNote);
 	});
 });

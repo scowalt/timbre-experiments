@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e575fd9d-85da-449a-850c-a1ddb4e1f239" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\scowa_000\Documents\GitHub\timbre-experiments\js\script.js" afterPath="$PROJECT_DIR$/js/sound.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sound.js" afterPath="$PROJECT_DIR$/js/sound.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -79,19 +79,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sound.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sound.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/sound.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="44" selection-start="640" selection-end="689" vertical-scroll-proportion="0.7435388">
-              <folding />
+            <state line="23" column="21" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!block;n#getRandomPentatonicMIDI#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="322" selection-end="322" vertical-scroll-proportion="-10.2">
+            <state line="4" column="1" selection-start="137" selection-end="137" vertical-scroll-proportion="0.14225942">
               <folding />
             </state>
           </provider>
@@ -100,7 +102,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="47" selection-start="540" selection-end="540" vertical-scroll-proportion="-9.807693">
+            <state line="9" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="-5.8846154">
               <folding />
             </state>
           </provider>
@@ -139,9 +141,9 @@
         <option value="$PROJECT_DIR$/js/README.md" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/js/sound.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/js/sound.js" />
       </list>
     </option>
   </component>
@@ -489,7 +491,9 @@
     <entry file="file://$PROJECT_DIR$/js/sound.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#getRandomPentatonicMIDI#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -503,20 +507,15 @@
     <entry file="file://$PROJECT_DIR$/js/sound.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#getRandomPentatonicMIDI#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="322" selection-end="322" vertical-scroll-proportion="-10.2">
           <folding />
         </state>
       </provider>
@@ -531,16 +530,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/sound.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="21" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!block;n#getRandomPentatonicMIDI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="47" selection-start="540" selection-end="540" vertical-scroll-proportion="-9.807693">
+        <state line="9" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="-5.8846154">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/sound.js">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="44" selection-start="640" selection-end="689" vertical-scroll-proportion="0.7435388">
+        <state line="4" column="1" selection-start="137" selection-end="137" vertical-scroll-proportion="0.14225942">
           <folding />
         </state>
       </provider>
