@@ -12,7 +12,8 @@ void setup() {
 }
 
 void createBall() {
-  balls[ballIndex] = new Ball(100, random(width), random(height), random(30, 70), ballIndex, balls);
+  balls[ballIndex] = new Ball(60, random(width), random(height), random(30, 70),
+  ballIndex, balls);
   ballIndex = (ballIndex + 1) % maxBalls;
 }
 
