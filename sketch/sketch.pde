@@ -107,7 +107,6 @@ class Ball {
   }
 
   void display() {
-    System.out.println(age);
     if (age == 0) {
       return;
     }
