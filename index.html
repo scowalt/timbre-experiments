@@ -3,15 +3,26 @@
 	<title>Timbre.js experiments</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans'
+	      rel='stylesheet'
+	      type='text/css'>
 </head>
 <body>
 <div id="body_container">
-
+	<canvas id="canvas" data-processing-sources="sketch/sketch.pde"></canvas>
 </div>
 <script src="js/timbre.dev.js"></script>
 <script src="js/subcollider-min.js"></script>
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/sound.js"></script>
+<script src="js/processing-1.4.1.js"></script>
+<script>
+	$(document).ready(function(){
+		$(document).ready(function(){
+			$(document).keypress(playNote);
+			$(document).click(playNote);
+		});
+	});
+</script>
 </body>
 </html>

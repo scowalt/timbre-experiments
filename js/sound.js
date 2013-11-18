@@ -24,10 +24,3 @@ function playNote(){
 		this.pause();
 	}).bang().play();
 }
-
-$(document).ready(function(){
-	$(document).ready(function(){
-		$(document).keypress(playNote);
-		$(document).click(playNote);
-	});
-});
