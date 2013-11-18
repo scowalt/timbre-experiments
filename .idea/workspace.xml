@@ -14,7 +14,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/a.js" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384374758747" ignored="false" />
     <file path="/Dummy.txt" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384806208140" ignored="false" />
-    <file path="/index.html" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384808279912" ignored="false" />
+    <file path="/index.html" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384808653713" ignored="false" />
     <file path="/fragment.java" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384363648225" ignored="false" />
     <file path="/script.js" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384371811216" ignored="false" />
     <file path="/a.html" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384375270158" ignored="false" />
@@ -100,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="30" selection-start="488" selection-end="488" vertical-scroll-proportion="-9.153846">
+            <state line="21" column="32" selection-start="730" selection-end="730" vertical-scroll-proportion="0.74530274">
               <folding />
             </state>
           </provider>
@@ -118,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sketch.pde" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sketch.pde" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sketch/sketch.pde">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="227" selection-end="227" vertical-scroll-proportion="0.46041667">
+            <state line="24" column="16" selection-start="444" selection-end="444" vertical-scroll-proportion="-4.08">
               <folding />
             </state>
           </provider>
@@ -162,8 +162,8 @@
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/js/sound.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sketch/sketch.pde" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -601,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="488" selection-end="488" vertical-scroll-proportion="-9.153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sketch/sketch.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -617,7 +610,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sketch/sketch.pde">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="227" selection-end="227" vertical-scroll-proportion="0.46041667">
+        <state line="24" column="16" selection-start="444" selection-end="444" vertical-scroll-proportion="-4.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="32" selection-start="730" selection-end="730" vertical-scroll-proportion="0.74530274">
           <folding />
         </state>
       </provider>
