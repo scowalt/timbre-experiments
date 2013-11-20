@@ -70,7 +70,7 @@ function Circle(xin, yin, din, idin, oin, colorin){
 
 var width = window.innerWidth;
 var height = window.innerHeight;
-var MAX_BALLS = 50;
+var MAX_BALLS = 100;
 
 gamejs.preload([]);
 
