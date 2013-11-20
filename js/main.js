@@ -1,4 +1,3 @@
-var gamejs = require('gamejs');
 var sound = require('sound');
 var Circle = require('Circle').Circle;
 
@@ -6,28 +5,26 @@ var width = window.innerWidth - 30;
 var height = window.innerHeight - 20;
 var MAX_BALLS = 100;
 
-gamejs.preload([]);
-
-gamejs.ready(function(){
+function sketchProc(processing){
 	var balls = new Array(MAX_BALLS);
 	var ballIdx = 0;
 	var color = "#ffffff";
 
-	var display = gamejs.display.setMode([width, height]);
+	processing.setup = function(){
+		processing.size(width, height);
+		processing.background(0);
+	}
 
-	gamejs.onEvent(function(event){
-		// event handling
-		if (event.type == 1) {
-			if (event.key == 16) {
-				sound.changeKey();
-				color = get_random_color();
-			}
-			else {
-				sound.playNote();
-				createBall();
-			}
+	processing.keyPressed = function(){
+		if (event.shiftKey) {
+			sound.changeKey();
+			color = get_random_color();
 		}
-	});
+		else {
+			sound.playNote();
+			createBall();
+		}
+	};
 
 	function createBall(){
 		var x = Math.floor(Math.random() * width);
@@ -37,28 +34,33 @@ gamejs.ready(function(){
 		ballIdx = (ballIdx + 1) % balls.length;
 	}
 
-	// http://stackoverflow.com/a/1484514/1222411
+	// http://stackoverflow.com/a/18037185/1222411
 	function get_random_color(){
-		var letters = '0123456789ABCDEF'.split('');
-		var color = '#';
-		for (var i = 0; i < 6; i++) {
-			color += letters[Math.round(Math.random() * 15)];
-		}
-		return color;
+		var R = Math.floor(Math.random() * 255);
+		var G = Math.floor(Math.random() * 255);
+		var B = Math.floor(Math.random() * 255);
+
+		R = (R << 16) & 0x00FF0000;
+		G = (G << 8) & 0x0000FF00;
+		B = B & 0x000000FF;
+
+		return 0xFF000000 | R | G | B;
 	}
 
-	gamejs.onTick(function(msDuration){
+	processing.draw = function(){
 		// draw background
-		gamejs.draw.rect(display, "#000000",
-			new gamejs.Rect([0, 0], [width, height]));
+		processing.background(0, 0, 0);
 
 		// draw balls
 		for (var i = 0; i < balls.length; i++) {
 			if (balls[i]) {
 				balls[i].collide();
 				balls[i].move();
-				balls[i].draw(gamejs, display);
+				balls[i].draw(processing);
 			}
 		}
-	});
-});
+	}
+}
+
+var processingInstance = new Processing(document.getElementById("mycanvas"),
+	sketchProc);

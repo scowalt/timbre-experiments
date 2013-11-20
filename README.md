@@ -7,5 +7,5 @@ This is a project consisting of me fooling around with different fun Javascript 
 
 - [subcollider.js](http://mohayonao.github.io/subcollider.js/)
 - [timbre.js](http://mohayonao.github.io/timbre.js/)
-- [GameJS](http://gamejs.org/)
-	- [Yabble](https://github.com/jbrantly/yabble)
+- [Processing.js](http://processingjs.org/)
+- [Yabble](https://github.com/jbrantly/yabble)

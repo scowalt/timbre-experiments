@@ -9,15 +9,12 @@
 </head>
 <body>
 <div id="body_container">
-	<div id="gjs-loader">
-		Loading...
-	</div>
-	<canvas id="gjs-canvas" tabindex="1"></canvas>
+	<canvas id="mycanvas" tabindex="1"></canvas>
 </div>
 <script src="lib/timbre.dev.js"></script>
 <script src="lib/subcollider-min.js"></script>
+<script src="lib/processing-1.4.1.js"></script>
 <script src="lib/yabble.js"></script>
-<script src="lib/gamejs.min.js"></script>
 <script>
 	require.setModuleRoot('./js/');
 	require.run('main');
