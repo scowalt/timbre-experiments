@@ -2,8 +2,8 @@ var gamejs = require('gamejs');
 var sound = require('sound');
 var Circle = require('Circle').Circle;
 
-var width = window.innerWidth;
-var height = window.innerHeight;
+var width = window.innerWidth - 30;
+var height = window.innerHeight - 20;
 var MAX_BALLS = 100;
 
 gamejs.preload([]);
