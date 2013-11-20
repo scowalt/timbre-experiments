@@ -9,21 +9,19 @@
 </head>
 <body>
 <div id="body_container">
-	<canvas id="canvas" data-processing-sources="sketch/sketch.pde"></canvas>
+	<div id="gjs-loader">
+		Loading...
+	</div>
+	<canvas id="gjs-canvas" tabindex="1"></canvas>
 </div>
-<script src="js/timbre.dev.js"></script>
-<script src="js/subcollider-min.js"></script>
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/sound.js"></script>
-<script src="js/processing-1.4.1.js"></script>
+<script src="lib/timbre.dev.js"></script>
+<script src="lib/subcollider-min.js"></script>
+<script src="lib/jquery-1.10.2.min.js"></script>
+<script src="lib/yabble.js"></script>
+<script src="lib/gamejs.min.js"></script>
 <script>
-	$(document).ready(function(){
-		$(document).ready(function(){
-			$("#canvas").focus();
-			$(document).keypress(playNote);
-			$(document).click(playNote);
-		});
-	});
+	require.setModuleRoot('./js/');
+	require.run('main');
 </script>
 </body>
 </html>
