@@ -4,8 +4,9 @@ var sound = require('sound');
 var spring = 0.05;
 var gravity = 0.05;
 var friction = -0.9;
-var width = 600;
-var height = 400;
+var width = window.innerWidth;
+var height = window.innerHeight;
+var MAX_BALLS = 100;
 
 function Circle(xin, yin, din, idin, oin, colorin){
 	this.x = xin;
@@ -68,9 +69,6 @@ function Circle(xin, yin, din, idin, oin, colorin){
 	}
 }
 
-var width = window.innerWidth;
-var height = window.innerHeight;
-var MAX_BALLS = 100;
 
 gamejs.preload([]);
 
