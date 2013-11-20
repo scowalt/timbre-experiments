@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e575fd9d-85da-449a-850c-a1ddb4e1f239" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\scowa_000\Documents\GitHub\timbre-experiments\lib\jquery-1.10.2.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Circle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="timbre-experiments.iws" />
@@ -19,8 +18,8 @@
     <file path="/styles.css" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384375452290" ignored="false" />
     <file path="/a.css" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384375256338" ignored="false" />
     <file path="/sound.js" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384915095599" ignored="false" />
-    <file path="/main.js" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384928521544" ignored="false" />
-    <file path="/Circle.js" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384926456896" ignored="false" />
+    <file path="/main.js" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384980839723" ignored="false" />
+    <file path="/Circle.js" changelist="e575fd9d-85da-449a-850c-a1ddb4e1f239" time="1384980926175" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +101,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="7" selection-start="692" selection-end="692" vertical-scroll-proportion="-16.346153">
+            <state line="22" column="24" selection-start="666" selection-end="666" vertical-scroll-proportion="-14.384615">
               <folding />
             </state>
           </provider>
@@ -111,21 +110,28 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="32" selection-start="2514" selection-end="2544" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!block;n#Circle#0" expanded="false" />
-              </folding>
+            <state line="6" column="20" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Circle.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/Circle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="15" selection-start="938" selection-end="938" vertical-scroll-proportion="0.5829439">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="379" selection-end="379" vertical-scroll-proportion="0.22860636">
+            <state line="11" column="0" selection-start="379" selection-end="379" vertical-scroll-proportion="-7.48">
               <folding />
             </state>
           </provider>
@@ -154,10 +160,10 @@
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/sketch/sketch.pde" />
         <option value="$PROJECT_DIR$/js/sound.js" />
-        <option value="$PROJECT_DIR$/js/Circle.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/Circle.js" />
       </list>
     </option>
   </component>
@@ -513,15 +519,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!block;n#Circle#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -601,15 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="32" selection-start="2514" selection-end="2544" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!block;n#Circle#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/sound.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="12" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
@@ -624,19 +612,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="7" selection-start="692" selection-end="692" vertical-scroll-proportion="-16.346153">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="379" selection-end="379" vertical-scroll-proportion="0.22860636">
+        <state line="11" column="0" selection-start="379" selection-end="379" vertical-scroll-proportion="-7.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="24" selection-start="666" selection-end="666" vertical-scroll-proportion="-14.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="20" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Circle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="15" selection-start="938" selection-end="938" vertical-scroll-proportion="0.5829439">
           <folding />
         </state>
       </provider>
