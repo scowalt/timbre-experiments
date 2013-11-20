@@ -48,8 +48,11 @@ gamejs.ready(function(){
 	}
 
 	gamejs.onTick(function(msDuration){
+		// draw background
 		gamejs.draw.rect(display, "#000000",
 			new gamejs.Rect([0, 0], [width, height]));
+
+		// draw balls
 		for (var i = 0; i < balls.length; i++) {
 			if (balls[i]) {
 				balls[i].collide();
