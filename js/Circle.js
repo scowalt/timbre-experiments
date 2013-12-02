@@ -1,50 +1,22 @@
-var spring = 0.05;
-var gravity = 0.05;
-var friction = -0.9;
+var density = 1.0;
+var friction = 0.5;
+var restitution = 0.2;
 
-var Circle = function(xin, yin, din, idin, oin, colorin){
-	this.x = xin;
-	this.y = yin;
-	this.diameter = din;
-	this.vx = 0;
-	this.vy = 0;
-	this.id = idin;
-	this.others = oin;
-	this.color = colorin;
+var Circle = function(xin, yin, din, world) {
+    this.diameter = din;
 
+    this.bodyDef = new Box2D.Dynamics.b2BodyDef;
+    this.bodyDef.type = Box2D.Dynamics.b2Body.b2_dynamicBody;
+    this.bodyDef.position.x = xin;
+    this.bodyDef.position.y = yin;
 
-	this.collide = function(){
-		for (var i = this.id + 1; i < this.others.length; i++) {
-			if (this.others[i]) {
-				var dx = this.others[i].x - this.x;
-				var dy = this.others[i].y - this.y;
-				var distance = Math.sqrt(dx * dx + dy * dy);
-				var minDist = this.others[i].diameter / 2 + this.diameter / 2;
-				if (distance < minDist) {
-					var angle = Math.atan2(dy, dx);
-					var targetX = this.x + Math.cos(angle) * minDist;
-					var targetY = this.y + Math.sin(angle) * minDist;
-					var ax = (targetX - this.others[i].x) * spring;
-					var ay = (targetY - this.others[i].y) * spring;
-					this.vx -= ax;
-					this.vy -= ay;
-					this.others[i].vx += ax;
-					this.others[i].vy += ay;
-				}
-			}
-		}
-	}
+    var fixDef = new Box2D.Dynamics.b2FixtureDef;
+    fixDef.density = density;
+    fixDef.friction = friction;
+    fixDef.restitution = restitution;
 
-	this.move = function(){
-		this.vy += gravity;
-		this.x += this.vx;
-		this.y += this.vy;
-	}
-
-	this.draw = function(processing){
-		processing.fill(this.color);
-		processing.ellipse(this.x,this.y,this.diameter, this.diameter);
-	}
-}
+    fixDef.shape = new Box2D.Collision.Shapes.b2CircleShape(din / 2);
+    world.CreateBody(this.bodyDef).CreateFixture(fixDef);
+};
 
 exports.Circle = Circle;

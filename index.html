@@ -1,23 +1,28 @@
 <html>
-<head>
-	<title>Timbre.js experiments</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans'
-	      rel='stylesheet'
-	      type='text/css'>
-</head>
-<body>
-<div id="body_container">
-	<canvas id="mycanvas" tabindex="1"></canvas>
-</div>
-<script src="lib/timbre.dev.js"></script>
-<script src="lib/subcollider-min.js"></script>
-<script src="lib/processing-1.4.1.js"></script>
-<script src="lib/yabble.js"></script>
-<script>
-	require.setModuleRoot('./js/');
-	require.run('main');
-</script>
-</body>
+	<head>
+		<title>Timbre.js experiments</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans'
+		rel='stylesheet'
+		type='text/css'>
+	</head>
+	<body>
+		<div id="body_container">
+			<canvas id="mycanvas" tabindex="1"></canvas>
+		</div>
+
+		<!-- IMPORTS -->
+		<script src="lib/timbre.dev.js"></script>
+		<script src="lib/subcollider-min.js"></script>
+		<script src="lib/processing-1.4.1.js"></script>
+		<script src="lib/yabble.js"></script>
+		<script src="lib/Box2dWeb-2.1.a.3.min.js"></script>
+		
+		<!-- RUN -->
+		<script>
+			require.setModuleRoot('./');
+			require.run('js/main');
+		</script>
+	</body>
 </html>
