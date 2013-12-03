@@ -35,17 +35,21 @@ var Circle = function(xin, yin, colorin, din, world) {
         processing.fill(this.color);
         processing.ellipse(pos.x, pos.y, this.diameter, this.diameter);
     };
-    
-    this.applyGravity = function(point){
+
+    this.applyGravity = function(point) {
+        var b2Vec2 = Box2D.Common.Math.b2Vec2;
         var x = point.x;
         var y = point.y;
         var pos = this.body.GetPosition();
-        var d = distance(x,y,pos.x, pos.y);
-        
+        var d = distance(x, y, pos.x, pos.y);
+        var force = Math.pow(d, -1.2);
+        var gravityVec = new b2Vec2(x - pos.x, y - pos.y);
+        gravityVec.Multiply(force*10000000 / gravityVec.Length());
+        this.body.ApplyForce(gravityVec, new b2Vec2(pos.x, pos.y));
     };
-    
-    function distance(x1, y1, x2, y2){
-        return Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1, 2));
+
+    function distance(x1, y1, x2, y2) {
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     };
 };
 

@@ -21,7 +21,7 @@ function sketchProc(processing) {
         processing.size(width, height);
         processing.background(0);
         processing.frameRate(60);
-        world = new b2World(new b2Vec2(0.0, 10), true);
+        world = new b2World(new b2Vec2(0.0, 0.0), true);
     };
 
     processing.keyPressed = function(event) {
@@ -60,18 +60,21 @@ function sketchProc(processing) {
         processing.background(0, 0, 0);
 
         // apply gravity
-        for (var i = 0; i < ballIdx; i++){
-            balls[i].applyGravity(center);
+        for (var i = 0; i < ballIdx; i++) {
+            var ball = balls[i];
+            if (ball)
+                ball.applyGravity(center);
         }
 
         // step the physics
         world.Step(5.0 / 60.0, 10, 10);
         world.ClearForces();
-
+        
         // draw balls
         for (var i = 0; i < ballIdx; i++) {
             var ball = balls[i];
-            if (ball) ball.draw(processing);
+            if (ball)
+                ball.draw(processing);
         }
     };
 }
