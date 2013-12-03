@@ -42,9 +42,12 @@ var Circle = function(xin, yin, colorin, din, world) {
         var y = point.y;
         var pos = this.body.GetPosition();
         var d = distance(x, y, pos.x, pos.y);
+        
+        // these next 3 lines are voodoo magic
         var force = Math.pow(d, -1.2);
         var gravityVec = new b2Vec2(x - pos.x, y - pos.y);
         gravityVec.Multiply(force*10000000 / gravityVec.Length());
+        
         this.body.ApplyForce(gravityVec, new b2Vec2(pos.x, pos.y));
     };
 
