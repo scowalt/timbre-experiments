@@ -6,10 +6,16 @@ var Circle = require('Circle').Circle;
 
 var width = window.innerWidth - 30;
 var height = window.innerHeight - 20;
+var center = {
+    x : width / 2,
+    y : height / 2
+};
 
 function sketchProc(processing) {
     var color = "#ffffff";
     var world = null;
+    var balls = [];
+    var ballIdx = 0;
 
     processing.setup = function() {
         processing.size(width, height);
@@ -32,7 +38,7 @@ function sketchProc(processing) {
         var x = Math.floor(Math.random() * width);
         var y = Math.floor(Math.random() * height);
         var diameter = Math.floor(Math.random() * 40) + 30;
-        new Circle(x, y, color, diameter, world);
+        balls[ballIdx++] = new Circle(x, y, color, diameter, world);
     }
 
     // http://stackoverflow.com/a/18037185/1222411
@@ -58,20 +64,9 @@ function sketchProc(processing) {
         world.ClearForces();
 
         // draw balls
-        // console.log(world.GetBodyList());
-        var ball = world.GetBodyList();
-        while (ball) {
-            var pos = ball.GetPosition();
-            var fix = ball.GetFixtureList();
-            if (fix) {
-                var shape = fix.GetShape();
-                var diameter = shape.m_radius * 2;
-                processing.fill(fix.m_userData);
-                processing.ellipse(pos.x, pos.y, diameter, diameter);
-            }
-            ball = ball.GetNext();
+        for (var i = 0; i < ballIdx; i++) {
+            balls[i].draw(processing);
         }
-
     };
 }
 
