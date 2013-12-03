@@ -2,7 +2,7 @@ var density = 1.0;
 var friction = 0.5;
 var restitution = 0.2;
 
-var Circle = function(xin, yin, din, world) {
+var Circle = function(xin, yin, colorin, din, world) {
     this.diameter = din;
 
     this.bodyDef = new Box2D.Dynamics.b2BodyDef;
@@ -16,6 +16,7 @@ var Circle = function(xin, yin, din, world) {
     fixDef.restitution = restitution;
 
     fixDef.shape = new Box2D.Collision.Shapes.b2CircleShape(din / 2);
+    fixDef.userData = colorin;
     world.CreateBody(this.bodyDef).CreateFixture(fixDef);
 };
 

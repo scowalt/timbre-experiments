@@ -32,7 +32,7 @@ function sketchProc(processing) {
         var x = Math.floor(Math.random() * width);
         var y = Math.floor(Math.random() * height);
         var diameter = Math.floor(Math.random() * 40) + 30;
-        new Circle(x, y, diameter, world);
+        new Circle(x, y, color, diameter, world);
     }
 
     // http://stackoverflow.com/a/18037185/1222411
@@ -66,7 +66,7 @@ function sketchProc(processing) {
             if (fix) {
                 var shape = fix.GetShape();
                 var diameter = shape.m_radius * 2;
-                processing.fill(color);
+                processing.fill(fix.m_userData);
                 processing.ellipse(pos.x, pos.y, diameter, diameter);
             }
             ball = ball.GetNext();
