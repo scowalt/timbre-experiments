@@ -59,13 +59,19 @@ function sketchProc(processing) {
         // draw background
         processing.background(0, 0, 0);
 
+        // apply gravity
+        for (var i = 0; i < ballIdx; i++){
+            balls[i].applyGravity(center);
+        }
+
         // step the physics
         world.Step(5.0 / 60.0, 10, 10);
         world.ClearForces();
 
         // draw balls
         for (var i = 0; i < ballIdx; i++) {
-            balls[i].draw(processing);
+            var ball = balls[i];
+            if (ball) ball.draw(processing);
         }
     };
 }

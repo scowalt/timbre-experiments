@@ -35,6 +35,18 @@ var Circle = function(xin, yin, colorin, din, world) {
         processing.fill(this.color);
         processing.ellipse(pos.x, pos.y, this.diameter, this.diameter);
     };
+    
+    this.applyGravity = function(point){
+        var x = point.x;
+        var y = point.y;
+        var pos = this.body.GetPosition();
+        var d = distance(x,y,pos.x, pos.y);
+        
+    };
+    
+    function distance(x1, y1, x2, y2){
+        return Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1, 2));
+    };
 };
 
 exports.Circle = Circle;
