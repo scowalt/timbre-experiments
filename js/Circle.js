@@ -35,17 +35,15 @@ var Circle = function(xin, yin, colorin, din, world) {
         processing.fill(this.color);
         processing.ellipse(pos.x, pos.y, this.diameter, this.diameter);
     };
-    
-    this.checkRemoval = function(world, point){
-    	var pos = this.body.GetPosition();
-    	if ((pos.x - point.x) < 5.0 && (pos.y - point.y) < 5.0){
-    		world.DestroyBody(this.body);
-    		return true;	
-    	}
-    	return false;
+
+    this.checkRemoval = function(world, point) {
+        var pos = this.body.GetPosition();
+        if (Math.abs(pos.x - point.x) < 5.0 && Math.abs(pos.y - point.y) < 5.0) {
+            world.DestroyBody(this.body);
+            return true;
+        }
+        return false;
     };
-    
-    
 
     this.applyGravity = function(point) {
         var b2Vec2 = Box2D.Common.Math.b2Vec2;
@@ -53,12 +51,12 @@ var Circle = function(xin, yin, colorin, din, world) {
         var y = point.y;
         var pos = this.body.GetPosition();
         var d = distance(x, y, pos.x, pos.y);
-        
+
         // these next 3 lines are voodoo magic
         var force = Math.pow(d, -1.2);
         var gravityVec = new b2Vec2(x - pos.x, y - pos.y);
-        gravityVec.Multiply(force*10000000 / gravityVec.Length());
-        
+        gravityVec.Multiply(force * 10000000 / gravityVec.Length());
+
         this.body.ApplyForce(gravityVec, new b2Vec2(pos.x, pos.y));
     };
 

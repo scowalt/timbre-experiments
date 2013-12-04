@@ -67,7 +67,7 @@ function sketchProc(processing) {
                 if (ball.checkRemoval(world, center)){
                 	balls[i] = null;	
                 }                
-               }
+            }
         }
 
         // step the physics
