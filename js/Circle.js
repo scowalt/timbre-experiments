@@ -35,6 +35,17 @@ var Circle = function(xin, yin, colorin, din, world) {
         processing.fill(this.color);
         processing.ellipse(pos.x, pos.y, this.diameter, this.diameter);
     };
+    
+    this.checkRemoval = function(world, point){
+    	var pos = this.body.GetPosition();
+    	if ((pos.x - point.x) < 5.0 && (pos.y - point.y) < 5.0){
+    		world.DestroyBody(this.body);
+    		return true;	
+    	}
+    	return false;
+    };
+    
+    
 
     this.applyGravity = function(point) {
         var b2Vec2 = Box2D.Common.Math.b2Vec2;

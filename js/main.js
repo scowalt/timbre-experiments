@@ -62,8 +62,12 @@ function sketchProc(processing) {
         // apply gravity
         for (var i = 0; i < ballIdx; i++) {
             var ball = balls[i];
-            if (ball)
+            if (ball){
                 ball.applyGravity(center);
+                if (ball.checkRemoval(world, center)){
+                	balls[i] = null;	
+                }                
+               }
         }
 
         // step the physics
