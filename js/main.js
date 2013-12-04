@@ -64,9 +64,10 @@ function sketchProc(processing) {
             var ball = balls[i];
             if (ball){
                 ball.applyGravity(center);
+                ball.shrink();   
                 if (ball.checkRemoval(world, center)){
                 	balls[i] = null;	
-                }                
+                }     
             }
         }
 

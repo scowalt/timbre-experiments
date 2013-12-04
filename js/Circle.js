@@ -25,7 +25,6 @@ var Circle = function(xin, yin, colorin, din, world) {
     this.body = world.CreateBody(bodyDef);
     this.fixture = this.body.CreateFixture(fixDef);
     this.color = colorin;
-    this.diameter = din;
 
     /**
      * OBJECT METHODS
@@ -33,12 +32,14 @@ var Circle = function(xin, yin, colorin, din, world) {
     this.draw = function(processing) {
         var pos = this.body.GetPosition();
         processing.fill(this.color);
-        processing.ellipse(pos.x, pos.y, this.diameter, this.diameter);
+        var shape = this.fixture.GetShape();
+        var diameter = shape.m_radius * 2;
+        processing.ellipse(pos.x, pos.y, diameter, diameter);
     };
 
     this.checkRemoval = function(world, point) {
         var pos = this.body.GetPosition();
-        if (Math.abs(pos.x - point.x) < 5.0 && Math.abs(pos.y - point.y) < 5.0) {
+        if (Math.abs(pos.x - point.x) < 10.0 && Math.abs(pos.y - point.y) < 10.0) {
             world.DestroyBody(this.body);
             return true;
         }
@@ -60,6 +61,11 @@ var Circle = function(xin, yin, colorin, din, world) {
         this.body.ApplyForce(gravityVec, new b2Vec2(pos.x, pos.y));
     };
 
+    this.shrink = function() {
+        var radius = this.fixture.GetShape().m_radius;
+        this.fixture.GetShape().m_radius = radius - 0.1;
+    };
+    
     function distance(x1, y1, x2, y2) {
         return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     };
