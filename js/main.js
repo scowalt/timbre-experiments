@@ -40,7 +40,7 @@ function sketchProc(processing) {
     }
 
     function createBall(x, y) {
-        var diameter = Math.floor(Math.random() * 40) + 30;
+        var diameter = Math.floor(Math.random() * 50) + 50;
         balls[ballIdx++] = new Circle(x, y, color, diameter, world);
     }
 
@@ -67,7 +67,7 @@ function sketchProc(processing) {
             var ball = balls[i];
             if (ball){
                 ball.applyGravity(center);
-                ball.shrink();   
+                ball.shrink(center);   
                 if (ball.checkRemoval(world, center)){
                 	balls[i] = null;	
                 }     

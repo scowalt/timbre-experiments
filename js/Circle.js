@@ -57,15 +57,18 @@ var Circle = function(xin, yin, colorin, din, world) {
         // these next 3 lines are voodoo magic
         var force = Math.pow(d, -1.1);
         var gravityVec = new b2Vec2(x - pos.x, y - pos.y);
-        var mul = Math.min(10000, force * 10000000 / gravityVec.Length());
+        var mul = 15 * (1 + Math.log(d));
         gravityVec.Multiply(mul);
 
         this.body.ApplyForce(gravityVec, new b2Vec2(pos.x, pos.y));
     };
 
-    this.shrink = function() {
+    this.shrink = function(center) {
+        var pos = this.body.GetPosition();
+        var d = distance(center.x, center.y, pos.x, pos.y);
+
         var radius = this.fixture.GetShape().m_radius;
-        this.fixture.GetShape().m_radius = radius - 0.1;
+        this.fixture.GetShape().m_radius = radius - 0.5;
     };
 
     function distance(x1, y1, x2, y2) {
