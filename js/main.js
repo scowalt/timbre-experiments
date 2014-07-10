@@ -30,13 +30,16 @@ function sketchProc(processing) {
             color = get_random_color();
         } else {
             sound.playNote();
-            createBall();
+            createBall(Math.floor(Math.random() * width), Math.random() * height);
         }
     };
 
-    function createBall() {
-        var x = Math.floor(Math.random() * width);
-        var y = Math.floor(Math.random() * height);
+    processing.mousePressed = function(event){
+        sound.playNote();
+        createBall(processing.mouseX, processing.mouseY);
+    }
+
+    function createBall(x, y) {
         var diameter = Math.floor(Math.random() * 40) + 30;
         balls[ballIdx++] = new Circle(x, y, color, diameter, world);
     }
