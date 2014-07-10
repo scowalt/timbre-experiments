@@ -3,3 +3,7 @@ body {
 	color                      : white;
 	font-family                : 'Open Sans', sans-serif;
 }
+
+canvas:focus {
+	outline: 0;
+}
