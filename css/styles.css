@@ -4,6 +4,6 @@ body {
 	font-family                : 'Open Sans', sans-serif;
 }
 
-canvas:focus {
+canvas {
 	outline: 0;
 }
